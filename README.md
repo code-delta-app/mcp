@@ -1,6 +1,6 @@
 # CodeDelta MCP server
 
-[CodeDelta](https://codedelta.app) is a deterministic code-churn measurement engine
+[CodeDelta](https://codedelta.app) is a code-churn measurement engine
 with AI-agent detection — a C++ engine that measures exactly what changed between two
 versions of a codebase (changed / deleted / added logical statements), plus scanners
 that find code which *runs* AI agents and code that may have been *written* by them.
@@ -19,7 +19,7 @@ Three deliberately coarse verbs:
 
 | Tool | What it does |
 |------|--------------|
-| `churn_scan` | Measure churn between two directories or two git refs — CHG/DEL/ADD logical statements, REP_CHURN, per-file detail. Deterministic; same numbers as the GUI and CI. |
+| `churn_scan` | Measure churn between two directories or two git refs — CHG/DEL/ADD logical statements, REP_CHURN, per-file detail. Same numbers as the GUI and CI, every run. |
 | `agent_scan` | Find code that **runs** AI agents (named SDK/agent-framework calls) plus agent evidence in git history (co-authorship trailers). |
 | `ai_audit` | Heuristic + ML scan for AI-**written** code — positioned as pointers for review, not verdicts. |
 
